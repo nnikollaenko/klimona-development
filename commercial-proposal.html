@@ -109,7 +109,7 @@ img,svg{ display:block; max-width:100%; }
 .intro p{ font-size:16.5px; font-weight:400; line-height:1.7; color:var(--ink); max-width:62ch; margin-bottom:18px; letter-spacing:-0.1px; }
 .intro p:last-of-type{ margin-bottom:0; }
 .intro .salut{ font-weight:600; font-variation-settings:'wght' 600; font-size:19px; letter-spacing:-0.02em; margin-bottom:22px; }
-.approach-list{ list-style:none; margin-top:40px; display:flex; flex-direction:column; }
+.approach-list{ list-style:none; margin-top:40px; margin-bottom:40px; display:flex; flex-direction:column; }
 .approach-list li{ display:flex; align-items:baseline; gap:18px; padding:16px 0; border-top:1px solid var(--line); font-size:15px; letter-spacing:-0.1px; }
 .approach-list li:last-child{ border-bottom:1px solid var(--line); }
 .approach-num{ font-weight:600; font-variation-settings:'wght' 600; color:var(--muted); font-size:13px; min-width:22px; }
@@ -135,14 +135,16 @@ img,svg{ display:block; max-width:100%; }
 .section-body p{ font-size:16px; font-weight:400; line-height:1.75; color:var(--ink); max-width:64ch; margin-bottom:18px; letter-spacing:-0.1px; }
 .section-body p:last-child{ margin-bottom:0; }
 .section-body p.muted{ color:var(--muted); }
+.section-body p a{ color:var(--ink); border-bottom:1px solid var(--line); text-decoration:none; transition:color .15s,border-color .15s; }
+.section-body p a:hover{ color:var(--muted); border-color:var(--ink); }
 
-.callout{ display:flex; gap:14px; background:var(--paper-raised); border-radius:16px; padding:20px 22px; margin-top:26px; max-width:64ch; }
+.callout{ display:flex; gap:14px; background:var(--paper-raised); border-radius:16px; padding:20px 22px; margin-top:26px; margin-bottom:26px; max-width:64ch; }
 .callout .dot{ width:22px; height:22px; min-width:22px; border-radius:50%; background:var(--muted); display:flex; align-items:center; justify-content:center; margin-top:1px; }
 .callout .dot svg{ width:11px; height:11px; stroke:var(--paper); stroke-width:2.4; fill:none; }
 .callout p{ font-size:14px; line-height:1.7; color:var(--ink); letter-spacing:-0.1px; }
 
 /* ── TABLES ── */
-.tbl-wrap{ overflow-x:auto; margin-top:6px; max-width:800px; }
+.tbl-wrap{ overflow-x:auto; margin-top:6px; margin-bottom:28px; max-width:800px; }
 table.pricing{ width:100%; border-collapse:collapse; font-size:14.5px; min-width:480px; letter-spacing:-0.1px; }
 table.pricing thead th{ text-align:left; font-size:10.5px; font-weight:600; font-variation-settings:'wght' 600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); border-bottom:1.5px solid var(--line); padding:11px 4px; }
 table.pricing tbody td{ padding:16px 4px; border-bottom:1px solid var(--line); vertical-align:top; }
@@ -163,7 +165,7 @@ table.pricing td.comment{ color:var(--muted); font-size:13.5px; }
   table.pricing td.comment{ font-size:13px; margin-top:2px; }
 }
 
-.includes{ margin-top:24px; }
+.includes{ margin-top:24px; margin-bottom:24px; }
 .includes-label{ font-size:11px; font-weight:600; font-variation-settings:'wght' 600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:12px; }
 .includes ul{ list-style:none; display:flex; flex-direction:column; gap:9px; }
 .includes li{ font-size:14px; color:var(--ink); padding-left:20px; position:relative; line-height:1.6; letter-spacing:-0.1px; }
@@ -171,7 +173,7 @@ table.pricing td.comment{ color:var(--muted); font-size:13.5px; }
 .includes li a:hover{ color:var(--muted); border-color:var(--ink); }
 .includes li::before{ content:''; position:absolute; left:0; top:8px; width:8px; height:8px; border-radius:50%; background:var(--muted); }
 
-.pkg-grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:28px; max-width:760px; }
+.pkg-grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:28px; margin-bottom:28px; max-width:760px; }
 .pkg-grid-single{ grid-template-columns:1fr; max-width:372px; }
 .pkg-card{ background:var(--paper-raised); border-radius:16px; padding:26px; }
 .pkg-card h4{ font-size:14px; font-weight:600; font-variation-settings:'wght' 600; margin-bottom:4px; letter-spacing:-0.1px; }
@@ -185,7 +187,7 @@ table.pricing td.comment{ color:var(--muted); font-size:13.5px; }
 .cost-total-value small{ font-size:14px; font-weight:400; color:rgba(244,244,240,0.6); margin-left:8px; letter-spacing:-0.1px; }
 
 /* ── TERMS ── */
-.terms-grid{ display:grid; grid-template-columns:1fr 1fr; gap:36px 48px; margin-top:8px; }
+.terms-grid{ display:grid; grid-template-columns:1fr 1fr; gap:36px 48px; margin-top:8px; margin-bottom:8px; }
 .terms-block h4{ font-size:11px; font-weight:600; font-variation-settings:'wght' 600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:14px; }
 .terms-block ul{ list-style:none; display:flex; flex-direction:column; gap:9px; }
 .terms-block li{ font-size:14px; color:var(--ink); line-height:1.65; padding-left:16px; position:relative; letter-spacing:-0.1px; }
@@ -225,7 +227,7 @@ table.pricing td.comment{ color:var(--muted); font-size:13.5px; }
     </div>
     <div class="topbar-actions">
       <a href="https://nikelstudio.com/" target="_blank" class="btn secondary no-arrow">
-        Наш сайт
+        Перейти на сайт
       </a>
       <a href="https://t.me/nnikollaenko" target="_blank" class="btn">
         Начать сотрудничество
@@ -237,7 +239,7 @@ table.pricing td.comment{ color:var(--muted); font-size:13.5px; }
 
 <div class="bottom-cta-bar">
   <a href="https://nikelstudio.com/" target="_blank" class="btn secondary no-arrow">
-    Наш сайт
+    Перейти на сайт
   </a>
   <a href="https://t.me/nnikollaenko" target="_blank" class="btn">
     Начать сотрудничество
